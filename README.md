@@ -1,13 +1,13 @@
-# LUCI-APP-AQSERVICE
-This package provides WEB UI for control aqservice
+# This package provides WEB UI for control aqservice
+
+**`<openWRTdir> is openwrt source root directory `**
 
 How to build package:
-* Checkout this package
-* Run ./scripts/feeds update luci
-* Checkout this package to feeds/luci/applications
-* Run again ./scripts/feeds update packages
-* Cd to openwrt src root directory and run ./scripts/feeds install -ap luci
-* Run make menuconfig and shoose Luci -> applications -> luci-app-aqservice and press select 
-* Exit from menuconfig and save your configuration
-* Run make package/luci-app-aqservice/compile
-* Cd to bin/packages/<Processor arhitecture>/luci/ and find aqservice.<version><arhitecture>.ipk
+1. Cd to **openWRTdir** and run  **./scripts/feeds update luci**
+1. Copy this package to **openWRTdir/feeds/luci/applications**
+1. Cd to **openWRTdir** and repeat **./scripts/feeds update luci**
+1. Execute **./scripts/feeds install -ap luci**
+1. Run **make menuconfig** and choose **Luci -> applications -> luci-app-aqservice** and press **select** button
+1. Exit from menuconfig and save your configuration
+1. Cd to **openWRTdir** and run **make package/luci-app-aqservice/compile**
+1. Binary package may be found at **openWRTdir/bin/packages/proccessor arhitecture/luci/** as **luci-app-aqservice.ipk**
